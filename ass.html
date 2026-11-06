@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Awareness Website</title>
+    <link rel="stylesheet" href="styleass.css">
+</head>
+<body>
+
+    <!-- heading -->
+    <div id="header">
+        <h1>Health Awareness Website</h1>
+        <p>Stay healthy, stay happy!</p>
+    </div>
+
+    <!-- navigation menu -->
+    <div id="menu">
+        <a href="#lifestyle">Lifestyle</a>
+        <a href="#food">Food</a>
+        <a href="#exercise">Exercise</a>
+        <a href="#sleepwater">Sleep & Water</a>
+        <a href="#awareness">Awareness</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- healthy lifestyle -->
+    <div class="section" id="lifestyle">
+        <h2>Healthy Lifestyle</h2>
+        <p>A healthy lifestyle means taking care of your body and your mind. If we eat good food, exercise daily and sleep on time then we can stay away from many diseases.</p>
+        <img src="https://tse4.mm.bing.net/th/id/OIP.QZ_HmQ6gSMPQpnewiThmVgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="healthy lifestyle" width="400">
+        <ul>
+            <li>Wake up early</li>
+            <li>Do not skip breakfast</li>
+            <li>Avoid too much mobile and TV</li>
+            <li>Think positive</li>
+        </ul>
+
+        <!-- javascript button for random tip -->
+        <button onclick="showTip()">Click for a health tip</button>
+        <p id="tip">Your tip will come here</p>
+    </div>
+
+    <!-- healthy food -->
+    <div class="section" id="food">
+        <h2>Healthy Food</h2>
+        <p>Food gives us energy. We should eat fruits, vegetables, milk and dal everyday. Junk food like burger and pizza should be eaten very less.</p>
+
+        <table border="1">
+            <tr>
+                <th>Food</th>
+                <th>Benefit</th>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>Good for heart</td>
+            </tr>
+            <tr>
+                <td>Carrot</td>
+                <td>Good for eyes</td>
+            </tr>
+            <tr>
+                <td>Milk</td>
+                <td>Strong bones</td>
+            </tr>
+            <tr>
+                <td>Spinach</td>
+                <td>Gives iron</td>
+            </tr>
+        </table>
+        <br>
+        <img src="https://tse4.mm.bing.net/th/id/OIP.UfA4ORcCSU3Gy9i4JJE-UQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="healthy food" width="400">
+    </div>
+
+    <!-- exercise -->
+    <div class="section" id="exercise">
+        <h2>Exercise</h2>
+        <p>We should do exercise for atleast 30 minutes every day. It makes our body strong and fit.</p>
+        <ol>
+            <li>Walking</li>
+            <li>Running</li>
+            <li>Yoga</li>
+            <li>Skipping</li>
+            <li>Cycling</li>
+        </ol>
+        <img src="https://i.pinimg.com/736x/c7/e7/59/c7e7594051c25adfc9e0236b7b6d01bc.jpg" alt="exercise"width="400">
+    </div>
+
+    <!-- sleep and water -->
+    <div class="section" id="sleepwater">
+        <h2>Sleep and Water Tips</h2>
+
+        <h3>Sleep</h3>
+        <p>Students should sleep 7 to 8 hours daily. Dont use phone before sleeping.</p>
+
+        <h3>Water</h3>
+        <p>Drink 8 glasses of water every day. Water keeps our body clean.</p>
+
+        <!-- water counter -->
+        <div id="waterbox">
+            <h3>Water Counter</h3>
+            <p>Glasses drunk today: <span id="count">0</span></p>
+            <button onclick="addWater()">I drank a glass</button>
+            <button onclick="resetWater()">Reset</button>
+            <p id="watermsg"></p>
+        </div>
+    </div>
+
+    <!-- health awareness -->
+    <div class="section" id="awareness">
+        <h2>Health Awareness</h2>
+        <p>Many people do not know about their health problems. Some important points:</p>
+        <ul>
+            <li>Wash your hands before eating</li>
+            <li>Go to doctor for regular checkup</li>
+            <li>Do not smoke or chew tobacco</li>
+            <li>Keep your surroundings clean</li>
+            <li>Take care of mental health, talk to someone if you feel sad</li>
+        </ul>
+        <img src="https://tse2.mm.bing.net/th/id/OIP.nOL-WNlG7YJAXI_2D3XbKwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="health awareness"width="400">
+    </div>
+
+    <!-- contact -->
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <form onsubmit="return sendForm()">
+            Name: <br>
+            <input type="text" id="name"placeholder="your name"><br><br>
+            Email: <br>
+            <input type="text" id="email"placeholder="email id"><br><br>
+            Message: <br>
+            <textarea id="message"placeholder="any feedback" rows="4" cols="30"></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div id="footer">
+        <p>Made by: karan |</p>
+        <p>Copyright 2026</p>
+    </div>
+
+    <script src="scriptass.js"></script>
+</body>
+</html>
